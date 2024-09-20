@@ -1,0 +1,297 @@
+body {
+  margin: 30px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.container {
+  position: relative;
+}
+
+.text-content {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  z-index: 4; /* Ensure text is above all the images */
+  max-width: 600px; /* Adjust the width as needed */
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: rgb(41, 40, 39); /* Text color */
+  font-size: 66px; /* Adjust the size as needed */
+  line-height: 1.0; /* Adds spacing between lines */
+}
+
+p {
+  margin: 10px 0 20px 0; /* Added bottom margin to create space for the buttons */
+  padding: 0;
+  color: rgb(124, 103, 103); /* Text color */
+  font-size: 28px; /* Adjust the size as needed */
+  line-height: 1.5; /* Adds spacing between lines */
+}
+
+/* Style for buttons */
+button {
+  font-size: 28px;
+  padding: 10px 20px;
+  margin-right: 10px; /* Space between buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:first-of-type {
+  background-color: #4a7a4c; /* Green background */
+  color: white; /* White text */
+}
+
+button:first-of-type:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+button:last-of-type {
+  background-color: white; /* White background */
+  color: #4a7a4c; /* Green text */
+  border: 2px solid #4a7a4c; /* Green border */
+}
+
+button:last-of-type:hover {
+  background-color: #f1f1f1; /* Light gray on hover */
+}
+
+/* Add down arrow using ::after pseudo-element */
+button:last-of-type::after {
+  content: " \2193"; /* Unicode for down arrow */
+  margin-left: 8px;
+}
+
+.black-box, .gray-box, .green-box {
+  overflow: hidden;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  height: 380px;
+  margin: 60px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 3;
+  height: 280px;
+  width: 70%;
+  right: 200px;
+  top: 300px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 2;
+  width: 80%;
+  left: 270px;
+  top: 200px;
+  height: 200px;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  float: right;
+  object-fit: cover;
+  box-shadow: none; /* No shadow on images */
+}
+
+/* Styling for circular images and text side by side */
+.image-circle-container {
+  display: flex;
+  align-items: center; /* Center align vertically */
+  gap: -35px; /* Reduce gap between images */
+  margin-top: 200px; /* Space above the circular images (adjust as needed) */
+}
+
+.image-circle-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular shape */
+  object-fit: cover;
+  box-shadow: none;
+}
+
+/* Text container */
+.image-text-container {
+  display: flex;
+  align-items: center; /* Center align vertically */
+  margin-left: 80px; /* Space between images and text */
+}
+
+.image-text-container p {
+  font-size: 30px; /* Adjust font size as needed */
+  color: #684a4a; /* Adjust text color as needed */
+  margin: 0;
+}
+
+/* Logo container styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px; /* Adjust the margin between the heading and logos */
+  gap: 20px; /* Adjust the space between logos */
+}
+
+.logo-container img {
+  width: 200px; /* Adjust the logo size as needed */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Heading above logo */
+.logo-heading {
+  text-align: center;
+  font-size: 26px; /* Adjust font size as needed */
+  color: #333; /* Adjust text color as needed */
+  margin-top: 80px; /* Add space above the heading */
+}
+
+/* How it works section */
+.subheading {
+  display: block;
+  text-align: left;
+  font-size: 28px;
+  color: #53b356; /* Green color to match the buttons */
+  margin-top: 60px; /* Space above the subheading */
+}
+
+.heading-secondary {
+  text-align: left;
+  font-size: 56px; /* Adjust font size as needed */
+  color: #000000; /* Adjust text color as needed */
+  margin: 40px 0 50px 0; /* Adjust spacing around the heading */
+}
+
+/* Flexbox for steps: Align text and image side by side */
+.step-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.step-text-box {
+  max-width: 600px;
+}
+
+.step-number {
+  font-size: 48px; /* Adjusted for better visibility */
+  color: #dddddd; /* Matching the button color */
+  margin: 0;
+}
+
+.heading-tertiary {
+  font-size: 36px;
+  color: #333;
+  margin: 10px 0 20px;
+}
+
+.step-description {
+  font-size: 20px;
+  color: #383232;
+  line-height: 1.5;
+}
+
+.step-image-box {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.step-image-box img {
+  width: 500px;
+  object-fit: cover;
+  border-radius: 35px;
+}
+
+.container-central-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.subhead {
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  color: #53b356; /* Green color to match the buttons */
+  margin-top: 60px; /* Space above the subheading */
+}
+.text-content {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  z-index: 4;
+  max-width: 600px;
+  margin: 20px; /* Add margin to create space around the text-content */
+}
+/* Testimonial Section Styling */
+.testimonial-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  color: #ff6347;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: left;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.testimonial-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Responsive layout for testimonials */
+@media (max-width: 48em) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}

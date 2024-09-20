@@ -1,0 +1,666 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Text Content */
+.text-content {
+  max-width: 50%;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.text-content button {
+  background-color: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.text-content button:hover {
+  background-color: #e14b4f;
+}
+  .box-wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  .container {
+    position: relative;
+  }
+  
+  .text-content {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 4; /* Ensure text is above all the images */
+    max-width: 600px; /* Adjust the width as needed */
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0;
+    color: rgb(41, 40, 39); /* Text color */
+    font-size: 66px; /* Adjust the size as needed */
+    line-height: 1.0; /* Adds spacing between lines */
+  }
+  
+  p {
+    margin: 10px 0 20px 0; /* Added bottom margin to create space for the buttons */
+    padding: 0;
+    color: rgb(124, 103, 103); /* Text color */
+    font-size: 28px; /* Adjust the size as needed */
+    line-height: 1.5; /* Adds spacing between lines */
+  }
+  
+  /* Style for buttons */
+  button {
+    font-size: 28px;
+    padding: 10px 20px;
+    margin-right: 10px; /* Space between buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:first-of-type {
+    background-color: #4a7a4c; /* Green background */
+    color: white; /* White text */
+  }
+  
+  button:first-of-type:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  button:last-of-type {
+    background-color: white; /* White background */
+    color: #4a7a4c; /* Green text */
+    border: 2px solid #4a7a4c; /* Green border */
+  }
+  
+  button:last-of-type:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+  }
+  
+  /* Add down arrow using ::after pseudo-element */
+  button:last-of-type::after {
+    content: " \2193"; /* Unicode for down arrow */
+    margin-left: 8px;
+  }
+  
+  /* Box layout */
+  .black-box {
+    position: relative;
+    z-index: 1;
+    height: 400px;
+    margin: 40px;
+    overflow: hidden;
+    left: 600px; /* If centering is needed, change this */
+  }
+  
+  .gray-box {
+    position: absolute;
+    z-index: 3;
+    height: 280px;
+    width: 70%;
+    right: 200px;
+    top: 380px;
+    overflow: hidden;
+  }
+  
+  .green-box {
+    position: absolute;
+    z-index: 2;
+    width: 80%;
+    left: 280px;
+    top: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  img {
+    height: 100%;
+    width: auto;
+    float: right;
+    object-fit: cover;
+    box-shadow: none; /* No shadow on images */
+  }
+  
+  /* Styling for circular images and text side by side */
+  .image-circle-container {
+    display: flex;
+    align-items: center; /* Center align vertically */
+    gap: -2px; /* Adjusted gap for better spacing */
+    margin-top: 200px; /* Space above the circular images */
+  }
+  
+  .image-circle-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover;
+    box-shadow: none;
+  }
+  
+  /* Text container */
+  .image-text-container {
+    display: flex;
+    align-items: center; /* Center align vertically */
+    margin-left: 80px; /* Space between images and text */
+  }
+  
+  .image-text-container p {
+    font-size: 30px; /* Adjust font size as needed */
+    color: #684a4a; /* Adjust text color as needed */
+    margin: 0;
+  }
+  
+
+/* Logo Section */
+.logo-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.logo-container img {
+  max-width: 240px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.logo-container img:hover {
+  filter: none;
+  opacity: 1;
+}
+/* Container central text */
+.container-central-text {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Meals grid layout */
+.meals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.meal {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.meal-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.meal-content {
+  padding: 20px;
+}
+
+.meal-tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meal-attribute {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.diets {
+  max-width: 500px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item .icon-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Flexbox layout for aligning meals and diets */
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .meals-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+
+  .diets {
+    margin-top: 20px;
+  }
+}
+/* Container central text */
+.container-central-text {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.subheading {
+  display: block;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Flexbox layout for positioning meals on the left and diets on the right */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Adjust spacing between the two sections */
+}
+
+/* Meals section */
+.meals-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.meal {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.meal-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.meal-content {
+  padding: 20px;
+}
+
+.meal-tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meal-attribute {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Diets section */
+.diets {
+  flex: 1;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.heading-tertiary {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item .icon-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* Testimonials Section */
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonials-header {
+  margin-bottom: 2rem;
+}
+
+.subheading {
+  display: block;
+  color: #684a4a;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-image {
+  flex-shrink: 0;
+}
+
+.testimonial-image img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 3px solid #684a4a;
+}
+
+.testimonial-text {
+  flex: 1;
+}
+
+.testimonial-quote {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+/* Center the link container */
+.container.all-recipes {
+  display: flex;
+  justify-content: center;  /* Horizontally center */
+  align-items: center;  /* Vertically center */
+  height: 0vh; /* 20% of viewport height (adjust as needed) */
+}
+
+/* Link styles */
+.link {
+  color: #ff6347; /* Link color */
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;  /* Vertically center */
+  gap: 0.5rem; /* Space between text and arrow */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.link:hover {
+  color: #ff4500;
+}
+
+/* Arrow icon */
+.arrow-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Hover arrow animation */
+.link:hover .arrow-icon {
+ transform: translateX(2px); /* Move arrow to the right on hover */
+}
+.meal-container {
+  margin-bottom: 0.5rem; /* Adjust this value to control the space below the meal container */
+  margin-top: 0rem; /* Optional: Adjust space above the button container */
+} /* Testimonial Section */
+.testimonial-section {
+  padding: 4rem 2rem;
+  background-color: #f8c9c9; /* Light background for contrast */
+}
+
+/* Testimonial Container */
+.testimonials-gallery-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  align-items: start;
+}
+
+/* Testimonial Wrapper */
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Increase space between testimonials */
+}
+
+/* Individual Testimonial */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dac7c7;
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow for a modern look */
+  text-align: center;
+  max-width: 100%;
+}
+
+/* Testimonial Image */
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Testimonial Name */
+.testimonial-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #5a4497;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Gallery Items */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.gallery-item img {
+  width: 150%;
+  height: 100px; /* Larger height for better display */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-item:hover {
+  z-index: 10;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .testimonials-gallery-container {
+    grid-template-columns: 1fr; /* Stack testimonials and gallery */
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 1.5rem; /* Smaller gap for smaller screens */
+  }
+}

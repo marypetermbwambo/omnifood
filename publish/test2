@@ -1,0 +1,395 @@
+/* Main container to hold both sections */
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container for meals and diets sections */
+.content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adjust gap between sections */
+  width: 100%;
+}
+
+/* Meals container styling */
+.meals-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Meals grid styling */
+.meals-grid {
+  display: flex;
+  gap: 20px; /* Adjust gap between meal items */
+  flex-wrap: wrap;
+}
+
+/* Diets section styling */
+.diets {
+  flex: 1;
+  max-width: 300px; /* Adjust to fit design */
+}
+
+/* General container styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Meal section */
+.meal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.meal-img {
+  width: 100%;
+  height: auto;
+}
+
+.meal-content {
+  padding: 10px;
+}
+
+.meal-attributes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meal-attribute {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Diets section */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/* Container central text */
+.container-central-text {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Meals grid layout */
+.meals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.meal {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.meal-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.meal-content {
+  padding: 20px;
+}
+
+.meal-tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meal-attribute {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.diets {
+  max-width: 500px;
+}
+
+/* List of diets */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item .icon-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Flexbox layout for positioning meals on the left and diets on the right */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.meals-grid {
+  flex: 1 1 60%; /* Left side with meals */
+}
+
+.diets {
+  flex: 1 1 35%; /* Right side with diets */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .meals-grid {
+    flex: 1 1 100%;
+  }
+
+  .diets {
+    flex: 1 1 100%;
+    margin-top: 20px;
+  }
+}
+/* Container central text */
+.container-central-text {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.subhead {
+  display: block;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.heading-secondary {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Flexbox layout for positioning meals on the left and diets on the right */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px; /* Adjust spacing between the two sections */
+}
+
+/* Meals section */
+.meals-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.meal {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.meal-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.meal-content {
+  padding: 20px;
+}
+
+.meal-tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meal-attribute {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Diets section */
+.diets {
+  flex: 1;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.heading-tertiary {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item .icon-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+/* Testimonials Section */
+.testimonials-gallery-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for the section */
+  gap: 6rem;
+  padding: 4rem 2rem;
+  background-color: #f7f7f7; /* Light background for contrast */
+}
+
+/* Testimonials Container */
+.testimonials-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns for testimonials */
+  gap: 2rem; /* Space between testimonials */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Individual Testimonial */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 100%;
+}
+
+/* Testimonial Image */
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Testimonial Name */
+.testimonial-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #5a4497;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .testimonials-gallery-container {
+    grid-template-columns: 1fr; /* Stack testimonials and gallery */
+  }
+
+  .testimonials-container {
+    grid-template-columns: 1fr; /* Stack testimonials in one column */
+  }
+}
+
+
