@@ -46,14 +46,12 @@
 
 /* CTA button styling */
 .btn--cta {
-  background-color: #d8cfad;
-  color: #0e0d0d;
-  padding: 1rem 2rem;
-  border-radius: 5px;
-  text-decoration: style;
-  font-size: 1.6rem;
-  font-weight: 100;
-  border:color;
+  background-color: #e67e22;
+  color: #f8f3f3;
+  border-radius: 9px;
+  text-decoration: none;
+  display: inline-block;
+  padding:1.2rem 2.4rem ;
 }
 
 .btn--cta:hover {
@@ -602,7 +600,10 @@ body {
 } /* Testimonial Section */
 .testimonial-section {
   padding: 4rem 2rem;
-  background-color: #f8c9c9; /* Light background for contrast */
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
 
 /* Testimonial Container */
@@ -669,7 +670,8 @@ body {
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1.6rem;
+  padding: 1.6rem;
 }
 
 /* Gallery Items */
@@ -715,6 +717,10 @@ body {
   .testimonials {
     grid-template-columns: 1fr;
     gap: 1.5rem; /* Smaller gap for smaller screens */
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
   }
 }
 /* General Styles */
@@ -781,14 +787,6 @@ body {
     left: 20px;
     z-index: 4; /* Ensure text is above all the images */
     max-width: 600px; /* Adjust the width as needed */
-  }
-  
-  h1 {
-    margin: 0;
-    padding: 0;
-    color: rgb(41, 40, 39); /* Text color */
-    font-size: 66px; /* Adjust the size as needed */
-    line-height: 1.0; /* Adds spacing between lines */
   }
   
   p {
@@ -1183,52 +1181,6 @@ body {
   font-weight: bold;
   color: #333;
 }
-
-.testimonials-container {
-  display: grid;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.testimonial {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-image {
-  flex-shrink: 0;
-}
-
-.testimonial-image img {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border: 3px solid #684a4a;
-}
-
-.testimonial-text {
-  flex: 1;
-}
-
-.testimonial-quote {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 0.5rem;
-}
-
-.testimonial-name {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #333;
-}
 /* Center the link container */
 .container.all-recipes {
   display: flex;
@@ -1357,13 +1309,6 @@ body {
   position: relative;
 }
 
-h1 {
-  margin: 0;
-  padding: 0;
-  color: rgb(41, 40, 39); /* Text color */
-  font-size: 66px; /* Adjust the size as needed */
-  line-height: 1.0; /* Adds spacing between lines */
-}
 
 p {
   margin: 10px 0 20px 0; /* Added bottom margin to create space for the buttons */
@@ -1759,27 +1704,6 @@ img {
   .gallery {
     grid-template-columns: 1fr; /* Single column layout for gallery */
   }
-} 
-/* Testimonial Item */
-.testimonial {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for emphasis */
-  margin-bottom: 20px;
-}
-
-/* Testimonial Name */
-.testimonial-name {
-  font-size: 18px;
-  font-weight: bold;
-  color: #5a4497;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 /* Testimonial Price */
@@ -1790,21 +1714,6 @@ img {
   margin-bottom: 20px;
 }
 
-/* Testimonial Image */
-.testimonial-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Testimonial Text */
-.testimonial-text {
-  margin-top: 1.5rem;
-  font-family: "Times New Roman", serif;
-  font-size: 1em;
-  color: #333;
-}
 .section-pricing {
   background-color: hsl(210, 100%, 99%); /* Replace with your desired color */
   padding: 40px 20px; /* Optional: Adds padding inside the section */
